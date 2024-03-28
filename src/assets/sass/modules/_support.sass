@@ -1,0 +1,58 @@
+.support
+  background-color: $color-white
+  border-radius: 80px
+
+  .support__items
+    padding-top: 87px
+    padding-bottom: 89px
+    display: flex
+    justify-content: flex-start
+    flex-direction: row
+    flex-wrap: wrap
+    gap: 29px
+
+  .support__item
+    border-radius: 40px
+    background: $background-blocks
+    img
+      align-self: center
+
+  .item1
+    @include width_height(401px, 315px)
+    @include flexContainer(column, center, flex-start)
+
+  .item2
+    @include flexContainer(column, flex-start, flex-start)
+    width: 549px
+    max-height: 258px
+    padding-left: 100px
+    padding-right: 81px
+    padding-top: 56px
+    h3
+      margin-bottom: 27px
+      letter-spacing: 0.08px
+
+  .item3
+    @include width_height(630px, 235px)
+    padding-left: 100px
+    padding-top: 56px
+    h3
+      margin-bottom: 27px
+      letter-spacing: 0.33px
+    .support__item-text
+      max-width: 502px
+
+  .item4
+    @include flexContainer(column, center, flex-start)
+    @include width_height(400px, 290px)
+
+  .support__item-text
+    margin-bottom: 15px
+    font-family: $font-family
+    font-weight: 400
+    font-size: 16px
+    line-height: 156%
+    color: #22253b
+
+    &:last-child
+      margin-bottom: 0px
