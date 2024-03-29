@@ -1,0 +1,226 @@
+.popup__start
+  z-index: 20
+  position: fixed
+  display: none
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(25, 26, 38, 0.9)
+
+  // PAGE 1
+  .popup__page
+    position: fixed
+    text-align: center
+    border-radius: 30px
+    max-width: 46.25rem
+    left: 50%
+    top: 24%
+    background-color: #ededed
+    transform: translateX(-50%) !important
+
+  .popup_1
+    display: none
+    max-height: 345px
+    padding: 57px 113px 41px 113px
+
+    h4
+      font-size: 24px
+      line-height: 108%
+      text-align: center
+      max-width: 506px
+      width: 100%
+      margin: 0 auto
+      margin-bottom: 24px
+
+  p
+    font-size: 15px
+    line-height: 133%
+    text-align: center
+    margin-bottom: 24px
+    max-width: 515px
+    width: 100%
+
+  .popup-close
+    @include width_height(19px, 1px)
+    background: #bcbcbc
+    position: absolute
+    top: -0.2rem
+    right: 1.9rem
+    line-height: 5rem
+    background: transparent
+    border: none
+
+  .button_start
+    margin: 0 auto
+    @include width_height(197px, 70px)
+
+  // PAGE 2
+
+  .popup_2
+    display: none
+    max-height: 345px
+    padding: 89px 113px 85px 113px
+
+  // PAGE 3
+
+  .popup_3
+    background: $color-white
+    left: 50%
+    top: 22.5%
+    padding: 37px 83px 48px 34px
+    display: none
+
+    p
+      font-size: 15px
+      line-height: 147%
+      text-align: left
+      margin-bottom: 46px
+      max-width: 618px
+      width: 100%
+      padding-left: 5px
+
+    .main_form
+      @include flexContainer(row, space-between, flex-end)
+
+    .form
+      @include flexContainer(column, flex-start, flex-start)
+      gap: 12px
+
+    .button_answer
+      margin-right: -55px
+      gap: 15px
+
+  h6
+    border-radius: 49px
+    @include width_height(129px, 41px)
+    background: $color-grey
+    line-height: 41px
+    margin-bottom: 21px
+    padding-left: 1px
+
+  .input_wrap
+    position: relative
+    text-align: left
+
+    label
+      font-weight: 500
+      font-size: 15px
+      line-height: 160%
+      cursor: pointer
+      margin-left: 45px
+      &:before,
+      &:after
+        content: ''
+        position: absolute
+        top: 0%
+
+      &:before
+        left: 0
+        margin-left: 5px
+        @include width_height(22px, 22px)
+        border-radius: 4px
+        vertical-align: middle
+        background: #eaeaea
+        box-shadow: 0 0 1px grey
+
+      &:after
+        border-radius: 4px
+        @include width_height(14px, 14px)
+        left: 4px
+        margin: 4px 0 0
+        opacity: 0
+        background: #f15525
+        transform: translate3d(0, 0, 0) scale(0.2)
+        transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out
+
+    input[type="radio"],
+    input[type="checkbox"]
+      position: absolute
+      top: 0
+      left: -9999px
+      visibility: hidden
+
+      &:checked + label
+        &:before
+
+        &:after
+          transform: translate3d(0, 0, 0)
+          opacity: 1
+
+  // PAGE 4
+
+  .popup_4
+    display: none
+    background: $color-white
+    max-width: 680px
+    width: 100%
+    // max-height: 448px
+    left: 50%
+    top: 18.6%
+    padding: 36px 28px 37px 34px
+
+    h6
+      margin-bottom: 30px
+
+    h4
+      font-family: $font-family
+      font-weight: 400
+      font-size: 24px
+      line-height: 108%
+      color: #22253b
+      margin-bottom: 27px
+      text-align-last: left
+
+    .popup_4-text
+      font-size: 15px
+      line-height: 147%
+      color: #22253b
+      text-align: left
+      max-width: 632px
+      span
+        font-weight: 500
+
+    .button_answer
+      margin-left: auto
+
+    // PAGE 5
+
+  .popup_5
+    display: none
+    background: $color-white
+    max-height: 345px
+    padding: 53px 92px 54px 92px
+
+    .popup_5-results
+      border-radius: 49px
+      @include width_height(152px, 78px)
+      background: $color-grey
+      font-size: 14px
+      line-height: 156%
+      letter-spacing: 0.1px
+      text-transform: uppercase
+      gap: 8px
+      margin: 0 auto
+      margin-bottom: 18px
+      @include flexContainer(column, center, center)
+
+    p
+      font-family: $font-family
+      font-weight: 500
+      font-size: 18px
+      line-height: 122%
+      text-align: center
+      margin-bottom: 31px
+      max-width: 557px
+      width: 100%
+
+    .button_start
+      @include width_height(258px, 49px)
+      font-weight: 500
+      font-size: 15px
+      line-height: 87%
+      letter-spacing: -0.03em
+      gap: 23px

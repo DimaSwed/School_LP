@@ -37,7 +37,7 @@
 					<div class="header__content">
 						<div class="header__content_intro">
 							<h1>
-								Школа <span class="title_symbol">{</span><span class="title_word">программирования</span><span class="title_symbol">}</span> для тех, кому нужны реальные навыки, <br />
+								Школа <span class="title_symbol">{ </span><span class="title_word">программирования</span><span class="title_symbol"> }</span> для тех, кому нужны реальные навыки, <br />
 								а не просто сертификат
 							</h1>
 							<div class="header__separator"></div>
@@ -455,6 +455,121 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- MODALS -->
+
+		<div class="popup__start" data-modal>
+			<div class="container">
+				<div class="inner">
+					<!-- page 1 -->
+					<div class="popup__page popup_1">
+						<button class="popup-close">
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC" />
+								<rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC" />
+							</svg>
+						</button>
+						<h4>
+							Перед тем, как приступить к обучению, <br />
+							необходимо пройти небольшой тест
+						</h4>
+						<p>
+							Тест состоит из 4 заданий на логическое мышление и прочие навыки, необходимые программисту. Задания не самые простые. Но ни в коем случае не выбирайте ответы наугад. Если вы не можете
+							дать правильный ответ – выбирайте пункт «Не знаю».
+						</p>
+						<button class="button button_start">Начать тест <img src="assets/icons/header-button-arrow.svg" alt="arrow" /></button>
+					</div>
+
+					<!-- page 2 -->
+					<div class="popup__page popup_2">
+						<button class="popup-close">
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC" />
+								<rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC" />
+							</svg>
+						</button>
+						<p>
+							Тест состоит из 4 заданий на логическое мышление и прочие навыки, необходимые программисту. Задания не самые простые. Но ни в коем случае не выбирайте ответы наугад. Если вы не можете
+							дать правильный ответ – выбирайте пункт «Не знаю».
+						</p>
+						<button class="button button_start">Начать тест <img src="assets/icons/header-button-arrow.svg" alt="arrow" /></button>
+					</div>
+
+					<!-- page 3 -->
+					<div class="popup__page popup_3">
+						<button class="popup-close">
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC" />
+								<rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC" />
+							</svg>
+						</button>
+						<h6>Задание №1</h6>
+						<p>
+							Иван Иванович купил в магазине у дома несколько пачек макарон по 40 рублей, несколько пачек печенья по 32 рубля и 2 пакета сока. Продавщица сказала, что с него 525 рублей (скидка не
+							предусмотрена). Иван Иванович заявил, что его пытаются обсчитать. Действительно ли продавщица ошиблась в подсчетах?
+						</p>
+
+						<div class="main_form">
+							<form class="form" action="#" method="POST">
+								<div class="input_wrap">
+									<input type="checkbox" name="fieldset-1" id="checkbox1" />
+									<label for="checkbox1">Да, сумма явно неверная</label>
+								</div>
+								<div class="input_wrap">
+									<input type="checkbox" name="fieldset-2" id="checkbox2" />
+									<label for="checkbox2">Нет, такая сумма вполне могла получиться</label>
+								</div>
+								<div class="input_wrap">
+									<input type="checkbox" name="fieldset-3" id="checkbox3" />
+									<label for="checkbox3">Не знаю, не получается решить</label>
+								</div>
+							</form>
+
+							<button class="button button_answer">Ответить <img src="assets/icons/modal-button-arrow.svg" alt="arrow" /></button>
+						</div>
+					</div>
+
+					<!-- page 4 -->
+
+					<div class="popup__page popup_4">
+						<button class="popup-close">
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC" />
+								<rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC" />
+							</svg>
+						</button>
+						<h6>Задание №1</h6>
+						<h4>Правильно! С логикой у вас все отлично</h4>
+						<p class="popup_4-text">
+							Так как 1 пачка макарон стоит 40 рублей, то любое количество пачек будет стоить четное число рублей. Аналогично с печеньем. А так как пакетов сока ровно 2, то за сок тоже нужно будет
+							отдать четное число рублей. Получается, что ни при каких условиях в результате не может получиться нечетное число 525, а значит, продавщица действительно пыталась обсчитать Ивана
+							Ивановича. <br />
+							<br />
+							<span>В этом задании проверялось ваше логическое мышление. Это критически важный навык для любого программиста.</span>
+						</p>
+
+						<button class="button button_answer">Далее<img src="assets/icons/modal-button-arrow.svg" alt="arrow" /></button>
+					</div>
+
+					<!-- page 5 -->
+
+					<div class="popup__page popup_5">
+						<button class="popup-close">
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC" />
+								<rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC" />
+							</svg>
+						</button>
+
+						<div class="popup_5-results"><img src="assets/icons/like-icon.svg" alt="like-icon" /> Набрано 4/4</div>
+
+						<p>Это великолепный результат! У вас есть все шансы стать отличным программистом. Начните обучение прямо сейчас, доступ ко вводным урокам уже открыт</p>
+
+						<button class="button button_start">Начать учиться бесплатно<img src="assets/icons/modal-button-arrow.svg" alt="arrow" /></button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<script src="script.js"></script>
 	</body>
