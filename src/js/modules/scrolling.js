@@ -19,26 +19,30 @@ const scrolling = upSelector => {
 			event.preventDefault()
 
 			let widthTop = document.documentElement.scrollTop,
-				hash = this.hash,
-				toBlock = document.querySelector(hash).getBoundingClientRect().top,
-				start = null
+				hash = this.hash
 
-			requestAnimationFrame(step)
+			// Проверка на пустой хэш
+			if (hash !== '') {
+				let toBlock = document.querySelector(hash).getBoundingClientRect().top,
+					start = null
 
-			function step(time) {
-				if (start === null) {
-					start = time
-				}
+				requestAnimationFrame(step)
 
-				let progress = time - start,
-					r = toBlock < 0 ? Math.max(widthTop - progress / speed, widthTop + toBlock) : Math.min(widthTop + progress / speed, widthTop + toBlock)
+				function step(time) {
+					if (start === null) {
+						start = time
+					}
 
-				document.documentElement.scrollTo(0, r)
+					let progress = time - start,
+						r = toBlock < 0 ? Math.max(widthTop - progress / speed, widthTop + toBlock) : Math.min(widthTop + progress / speed, widthTop + toBlock)
 
-				if (r != widthTop + toBlock) {
-					requestAnimationFrame(step)
-				} else {
-					location.hash = hash
+					document.documentElement.scrollTo(0, r)
+
+					if (r != widthTop + toBlock) {
+						requestAnimationFrame(step)
+					} else {
+						location.hash = hash
+					}
 				}
 			}
 		})

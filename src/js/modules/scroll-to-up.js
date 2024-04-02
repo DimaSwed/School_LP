@@ -1,7 +1,7 @@
 const handleScroll = () => {
 	const scrollToTopButton = document.getElementById('scroll-to-top')
 
-	if (window.pageYOffset > 100) {
+	if (window.pageYOffset > 1650) {
 		scrollToTopButton.style.display = 'block'
 	} else {
 		scrollToTopButton.style.display = 'none'

@@ -1,5 +1,5 @@
-.popup__start
-  z-index: 20
+.popup__main
+  z-index: 999999999
   position: fixed
   display: none
   top: 0
@@ -15,19 +15,19 @@
     position: fixed
     text-align: center
     border-radius: 30px
-    max-width: 46.25rem
+    max-width: 46.25em
     left: 50%
     top: 24%
     background-color: #ededed
     transform: translateX(-50%) !important
 
   .popup_1
-    display: none
+    // display: none
     max-height: 345px
     padding: 57px 113px 41px 113px
 
     h4
-      font-size: 1.5rem
+      font-size: 1.5em
       line-height: 108%
       text-align: center
       max-width: 506px
@@ -36,7 +36,7 @@
       margin-bottom: 24px
 
   p
-    font-size: 0.9375rem
+    font-size: 0.9375em
     line-height: 133%
     text-align: center
     margin-bottom: 24px
@@ -47,9 +47,9 @@
     @include width_height(19px, 1px)
     background: #bcbcbc
     position: absolute
-    top: -0.2rem
-    right: 1.9rem
-    line-height: 5rem
+    top: -0.2em
+    right: 1.9em
+    line-height: 5em
     background: transparent
     border: none
 
@@ -60,7 +60,7 @@
   // PAGE 2
 
   .popup_2
-    display: none
+    // display: none
     max-height: 345px
     padding: 89px 113px 85px 113px
 
@@ -71,10 +71,10 @@
     left: 50%
     top: 22.5%
     padding: 37px 83px 48px 34px
-    display: none
+    // display: none
 
     p
-      font-size: 0.9375rem
+      font-size: 0.9375em
       line-height: 147%
       text-align: left
       margin-bottom: 46px
@@ -107,7 +107,7 @@
 
     label
       font-weight: 500
-      font-size: 0.9375rem
+      font-size: 0.9375em
       line-height: 160%
       cursor: pointer
       margin-left: 45px
@@ -151,7 +151,7 @@
   // PAGE 4
 
   .popup_4
-    display: none
+    // display: none
     background: $color-white
     max-width: 680px
     width: 100%
@@ -166,14 +166,14 @@
     h4
       font-family: $font-family
       font-weight: 400
-      font-size: 1.5rem
+      font-size: 1.5em
       line-height: 108%
       color: #22253b
       margin-bottom: 27px
       text-align-last: left
 
     .popup_4-text
-      font-size: 0.9375rem
+      font-size: 0.9375em
       line-height: 147%
       color: #22253b
       text-align: left
@@ -187,7 +187,7 @@
     // PAGE 5
 
   .popup_5
-    display: none
+    // display: none
     background: $color-white
     max-height: 345px
     padding: 53px 92px 54px 92px
@@ -196,7 +196,7 @@
       border-radius: 49px
       @include width_height(152px, 78px)
       background: $color-grey
-      font-size: 0.875rem
+      font-size: 0.875em
       line-height: 156%
       letter-spacing: 0.1px
       text-transform: uppercase
@@ -208,17 +208,28 @@
     p
       font-family: $font-family
       font-weight: 500
-      font-size: 1.125rem
+      font-size: 1.125em
       line-height: 122%
       text-align: center
       margin-bottom: 31px
       max-width: 557px
       width: 100%
 
-    .button_start
+    #start-free
       @include width_height(258px, 49px)
+      margin: 0 auto
       font-weight: 500
-      font-size: 0.9375rem
+      font-size: 0.9375em
       line-height: 87%
       letter-spacing: -0.03em
       gap: 23px
+
+// @media (max-width: 1200px)
+
+  // @media (max-width: 1100px)
+  // @media (max-width: 1024px)
+  // @media (max-width: 900px)
+  // @media (max-width: 768px)
+  // @media (max-width: 650px)
+  // @media (max-width: 578px)
+  // @media (max-width: 430px)
