@@ -1,0 +1,87 @@
+.header
+  background-color: $background-main
+
+  .inner
+    padding-top: 12px
+
+  &__menu
+    border-radius: 75px
+    height: 31px
+    backdrop-filter: blur(15px)
+    background: rgba(255, 255, 255, 0.9)
+    @include flexContainer(row, space-between, center)
+    padding: 10px 10px 10px 21px
+    margin-bottom: 60px
+
+    &_row
+      display: flex
+
+  &__menu_logo
+    margin-right: 76px
+
+  &__menu_logo_img
+    align-self: center
+
+  &__nav_links
+    @include flexContainer(row, space-between, center)
+
+  &__nav_link
+    text-decoration: none
+    margin-right: 47px
+    color: $text-color-main
+    font-family: $font-family
+    font-size: 0.8125rem
+    line-height: 104%
+    text-align: center
+
+  &__nav_link:last-child
+    margin-right: 0
+
+  &__menu_button-wrap
+    @include flexContainer(row, flex-start, center)
+
+    .button
+      margin-right: 10px
+
+      &_enter
+        margin-right: 0px
+
+  .header__content
+    @include flexContainer(row, space-between, flex-start)
+    margin-bottom: 56px
+
+    &_intro
+      max-width: 650px
+      // width: 100%
+      padding-top: 11px
+      h1
+        margin-bottom: 27px
+
+  .title_word
+    font-family: $second-family
+    font-style: italic
+    font-weight: 600
+
+  .title_symbol
+    font-family: $second-family
+    color: $color-orange
+    font-style: normal
+
+  .subtitle
+    margin-bottom: 19px
+    line-height: 144%
+    font-size: 1em
+
+  .header__content_img
+    img
+      margin-right: 9px
+
+  .header__tap
+    @include flexContainer(row, center, center)
+
+  .header__separator
+    border: 1px solid #dedede
+    max-width: 365px
+    width: 100%
+    height: 0px
+    margin-bottom: 13px

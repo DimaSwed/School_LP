@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+		<title>Школа программирования</title>
+		<link rel="stylesheet" href="assets/css/animate.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- HEADER -->
+
+		<div class="header__menu_burger">
+			<div class="header__menu_burger-content">
+				<button class="popup-close">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC" />
+						<rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC" />
+					</svg>
+				</button>
+				<ul class="burger_menu">
+					<li>
+						<a href="#stack">Чему вы научитесь</a>
+					</li>
+					<li>
+						<a href="#process">Процесс обучения</a>
+					</li>
+					<li>
+						<a href="#coast">Стоимость</a>
+					</li>
+					<li>
+						<a href="#contacts">Контакты</a>
+					</li>
+					<li>
+						<a href="#registration">Регистрация</a>
+					</li>
+				</ul>
+				<button class="button_enter"><img src="assets/icons/arrow-button.svg" alt="arrow" />Войти</button>
+			</div>
+		</div>
+
+		<header id="up" class="header">
+			<div class="container">
+				<div class="inner">
+					<div class="header__menu">
+						<div class="header__menu_row">
+							<div class="header__menu_logo">
+								<img src="assets/icons/header-logo.svg" alt="logo" class="header__menu_logo_img" />
+							</div>
+
+							<nav class="header__nav_links">
+								<a href="#stack" class="header__nav_link hover_orange">Чему вы научитесь</a>
+								<a href="#process" class="header__nav_link hover_orange">Процесс обучения</a>
+								<a href="#coast" class="header__nav_link hover_orange">Стоимость</a>
+								<a href="#contacts" class="header__nav_link hover_orange">Контакты</a>
+							</nav>
+						</div>
+
+						<div class="header__menu_button-wrap">
+							<button id="registration" class="button hover_orange">Регистрация</button>
+							<button class="button_enter"><img src="assets/icons/arrow-button.svg" alt="arrow" />Войти</button>
+						</div>
+
+						<button class="burger"><img src="assets/icons/burger-icon.svg" alt="burger-icon" /></button>
+					</div>
+
+					<div class="header__content">
+						<div class="header__content_intro">
+							<h1>
+								Школа <span class="title_symbol">{</span><span class="title_word">программирования</span><span class="title_symbol">}</span> для тех, кому нужны реальные навыки, <br />
+								а не просто сертификат
+							</h1>
+							<div class="header__separator"></div>
+							<p class="subtitle">
+								Пройдите тестирование, чтобы получить доступ <br />
+								к бесплатным вводным урокам
+							</p>
+							<button class="button button_start">Пройти тестирование <img src="assets/icons/header-button-arrow.svg" alt="arrow" /></button>
+						</div>
+
+						<div class="header__content_img">
+							<img src="assets/icons/header-layer.svg" alt="image" />
+						</div>
+					</div>
+					<div class="header__tap">
+						<button class="button_tap_next"><img src="assets/icons/header-tap-arrow.svg" alt="tap" /></button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- ABOUT -->
+
+		<div id="stack" class="about">
+			<div class="container">
+				<div class="inner">
+					<h2>Какие технологии вы изучите:</h2>
+					<div class="about__wrap">
+						<div class="about__wrap-img">
+							<img src="assets/icons/about-layer.svg" alt="image" />
+						</div>
+
+						<div class="about__wrap-content">
+							<div class="about__wrap-content-langs">
+								<div class="about__wrap-content-langs_item large-icon blue" id="1">Язык программирования Python</div>
+								<div class="about__wrap-content-langs_item small-icon orange" id="2">Сети</div>
+								<div class="about__wrap-content-langs_item middle-icon light-red" id="3">Базы данных</div>
+								<div class="about__wrap-content-langs_item large-icon green" id="4">Фреймворки Flask и Django</div>
+								<div class="about__wrap-content-langs_item large-icon light-blue" id="5">Отладка и тестирование</div>
+								<div class="about__wrap-content-langs_item small-icon dark-blue" id="6">Docker</div>
+								<div class="about__wrap-content-langs_item small-icon fiolet" id="7">Git</div>
+							</div>
+							<p>
+								Это необходимый минимум для <br />
+								современного backend-разработчика
+							</p>
+						</div>
+					</div>
+
+					<h2>
+						Обучение в YtYt – это<br />
+						удобно и результативно
+					</h2>
+					<div class="about__cards">
+						<div class="about__card">
+							<img src="assets/icons/about-icon-1.svg" alt="icon" />
+							<h5>
+								Огромное <br />
+								количество практики
+							</h5>
+							<p>
+								Более 500 самостоятельных <br />
+								заданий и 20 полноценных <br />
+								больших проектов
+							</p>
+						</div>
+						<div class="about__card">
+							<img src="assets/icons/about-icon-2.svg" alt="icon" />
+							<h5>
+								Современные <br />
+								методики обучения
+							</h5>
+							<p>
+								Спиральное обучение: <br />
+								погружаемся в материал <br />
+								постепенно, виток за витком
+							</p>
+						</div>
+						<div class="about__card">
+							<img src="assets/icons/about-icon-3.svg" alt="icon" />
+							<h5>
+								Простое и понятное <br />
+								изложение
+							</h5>
+							<p>
+								Вместо заумных <br />
+								терминов – примеры <br />
+								из реального мира
+							</p>
+						</div>
+						<div class="about__card">
+							<img src="assets/icons/about-icon-4.svg" alt="icon" />
+							<h5>
+								Гибкий график <br />
+								занятий
+							</h5>
+							<p>
+								Учитесь в любое <br />
+								время в удобном <br />
+								для вас темпе
+							</p>
+						</div>
+						<div class="about__card">
+							<img src="assets/icons/about-icon-5.svg" alt="icon" />
+							<h5>
+								Прямая связь с опытными <br />
+								программистами
+							</h5>
+							<p>
+								Задавайте вопросы <br />
+								и отправляйте свой код <br />
+								на проверку
+							</p>
+						</div>
+						<div class="about__card">
+							<img src="assets/icons/about-icon-6.svg" alt="icon" />
+							<h5>
+								Оплата небольшими <br />
+								частями
+							</h5>
+							<p>
+								Платите только за тот материал, <br />
+								который сейчас изучаете, <br />
+								а не за весь курс сразу
+							</p>
+						</div>
+						<div class="about__card">
+							<img src="assets/icons/about-icon-7.svg" alt="icon" />
+							<div>
+								<h5>Быстрый и легкий возврат</h5>
+								<p>
+									Если передумаете учиться – <br />
+									вернем деньги за 3 рабочих дня
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- PROGRAMM -->
+
+		<div id="process" class="programm">
+			<div class="container">
+				<div class="inner">
+					<h2>Как происходит обучение на YtYt?</h2>
+
+					<p class="programm__inner_subheading">
+						Обучение должно быть комфортным. Поэтому мы разработали собственную платформу для обучения программированию. На ней вы можете не только изучать теорию, но и запускать готовые примеры и
+						даже писать свой собственный код.
+					</p>
+
+					<p class="programm__inner_subheading">
+						Обучение должно быть комфортным. Поэтому мы разработали собственную платформу, на которой вы сможете не только изучать теорию, но и запускать готовые примеры и даже писать свой собственный
+						код.
+					</p>
+
+					<div class="programm__interactive">
+						<div class="programm__video">
+							<img src="assets/icons/video-button.svg" alt="play" />
+							<span>Посмотреть видео</span>
+						</div>
+					</div>
+
+					<div class="programm__content">
+						<div class="programm__content_step">
+							<p class="programm__content_heading">01</p>
+							<p class="programm__content_subheading">Весь материал разбит на небольшие уроки</p>
+							<p class="programm__content_subheading-2">Весь материал разбит на небольшие уроки</p>
+							<p class="programm__content_text">Теория и практика подаются маленькими порциями. Так вам будет легче усваивать новые знания.</p>
+							<p class="programm__content_text-2">В каждом уроке вы будете не только узнавать что-то новое, но и выполнять интересные практические задания.</p>
+						</div>
+
+						<div class="programm__separator"></div>
+
+						<div class="programm__content_step">
+							<p class="programm__content_heading">02</p>
+							<p class="programm__content_subheading">
+								Обучение <br />
+								через практику
+							</p>
+							<p class="programm__content_subheading-2">500 самых разных программ</p>
+							<p class="programm__content_text">Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.</p>
+							<p class="programm__content_text-2">От простого калькулятора ипотеки до мощного веб-приложения, размещенного на сервере и доступного из любой точки мира</p>
+						</div>
+
+						<div class="programm__separator"></div>
+
+						<div class="programm__content_step">
+							<p class="programm__content_heading">03</p>
+							<p class="programm__content_subheading">
+								Нет ограничений <br />
+								по времени
+							</p>
+							<p class="programm__content_subheading-2">Учитесь в комфортном темпе</p>
+							<p class="programm__content_text">Можно совмещать учёбу с работой и другими делами. Не нужно выпрашивать академический отпуск, если пришлось сделать перерыв.</p>
+							<p class="programm__content_text-2">От 30 минут до нескольких часов в день. Изучать теорию можно даже с мобильного телефона. Например, пока вы едете на работу.</p>
+						</div>
+					</div>
+
+					<div class="programm_button-wrap">
+						<button class="button button_start">Начать обучение <img src="assets/icons/header-button-arrow.svg" alt="arrow" /></button>
+						<p class="programm_button-wrap-text">Попробуйте, первые уроки бесплатны, но нужно пройти тестирование</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SUPPORT -->
+
+		<div class="support">
+			<div class="container">
+				<div class="inner">
+					<div class="support__items">
+						<div class="support__item item1">
+							<img src="assets/icons/support-layer.svg" alt="image" />
+						</div>
+						<div class="support__item item2">
+							<h3>Помощь и поддержка</h3>
+							<p class="support__item-text">Если в процессе обучения возникнут сложности, вы всегда сможете задать вопрос своему наставнику.</p>
+							<p class="support__item-text">
+								Раз в несколько уроков вы будете получать большое задание, которое нужно будет сдавать на проверку код-ревьюеру. Он внимательно изучит ваш код, найдет ошибки и поможет вам стать лучше.
+							</p>
+						</div>
+						<div class="support__item item3">
+							<h3>Методика обучения</h3>
+							<p class="support__item-text">
+								Весь учебный материал структурирован по принципу «спирального обучения». Сначала вы получаете базовые знания, а затем на каждом витке спирали углубляетесь в изученные темы, доводя их
+								понимание до совершенства. Такой подход упрощает обучение и гарантирует, что вы не пропустите ничего важного.
+							</p>
+						</div>
+						<div class="support__item item4">
+							<img src="assets/icons/support-layer2.svg" alt="image" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- COAST -->
+
+		<div id="coast" class="coast">
+			<div class="container">
+				<div class="inner">
+					<h2>Стоимость обучения</h2>
+
+					<div class="coast__advantages">
+						<div class="coast__advantages_item coast_item1">
+							<img src="assets/icons/coast-icon-1.svg" alt="icon" />
+							<p class="coast__advantages_item-text">
+								Весь курс разбит на несколько блоков. <br />
+								Оплата поэтапная вы платите только <br />
+								за тот блок, который сейчас проходите.
+							</p>
+						</div>
+
+						<div class="coast__advantages_item coast_item2">
+							<img src="assets/icons/coast-icon-2.svg" alt="icon" />
+							<p class="coast__advantages_item-text">
+								Любой из блоков вы <br />
+								можете оплатить в <br />
+								рассрочку
+							</p>
+						</div>
+
+						<div class="coast__advantages_item coast_item3">
+							<img src="assets/icons/coast-icon-3.svg" alt="icon" />
+							<p class="coast__advantages_item-text">
+								Если передумаете учиться, то возврат <br />
+								можно оформить в любой момент. <br />
+								Возвращаем деньги за 3 рабочих дня.
+							</p>
+						</div>
+					</div>
+
+					<div class="coast__phone">
+						<button>
+							<img src="assets/icons/coast-phone-icon.svg" alt="phone-icon" />
+							<img src="assets/icons/coast-arrow-icon.svg" alt="arrow-icon" />
+						</button>
+					</div>
+
+					<div class="coast__content">
+						<table>
+							<thead>
+								<tr>
+									<th>Блок</th>
+									<th>Стоимость (₽)</th>
+									<th>Расчетное время обучения (мес.) *</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Введение в программирование</td>
+									<td>Бесплатно</td>
+									<td>0.5</td>
+								</tr>
+								<tr>
+									<td>Основы программирования на Python</td>
+									<td>9 900</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Python, продвинутый уровень</td>
+									<td>14 900</td>
+									<td>2.5</td>
+								</tr>
+								<tr>
+									<td>Сети + фреймворк Flask</td>
+									<td>14 900</td>
+									<td>2.5</td>
+								</tr>
+								<tr>
+									<td>Базы данных</td>
+									<td>14 900</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>Фреймворк Django</td>
+									<td>14 900</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>Разработка «боевого» проекта</td>
+									<td>9 900</td>
+									<td>1.5</td>
+								</tr>
+								<tr>
+									<td><span>Итого</span></td>
+									<td><span>79 400</span></td>
+									<td><span>12</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<p class="coast__content-text">* если занятиям уделяется около 20 часов в неделю</p>
+
+					<div class="coast__info">
+						<img src="assets/icons/coast-info-icon.svg" alt="icon" />
+						<p>
+							Все блоки проходятся строго по порядку. Пропустить какой-то блок или начать обучение с середины нельзя, даже если вы считаете, что уже знаете какую-то часть материала. Только так мы
+							можем гарантировать, что вы получите все знания, предусмотренные учебной программой.
+						</p>
+						<button class="button button_start">Начать обучение <img src="assets/icons/header-button-arrow.svg" alt="arrow" /></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+
+		<footer>
+			<div class="container">
+				<div class="inner">
+					<div class="footer__wrapper">
+						<div class="footer__about">
+							<div class="footer__about_logos">
+								<img src="assets/icons/header-logo.svg" alt="logo" />
+								<span
+									>Школа <br />
+									программирования</span
+								>
+							</div>
+
+							<div class="footer__about_social">
+								<a href="https://www.instagram.com/" target="_blank">
+									<img class="social_icon" src="assets/icons/instagramm-icon.svg" alt="Instagram" />
+								</a>
+								<a href="https://vk.com/" target="_blank">
+									<img class="social_icon" src="assets/icons/vk-icon.svg" alt="VK" />
+								</a>
+								<a href="https://www.facebook.com/" target="_blank">
+									<img class="social_icon" src="assets/icons/facebook-icon.svg" alt="Facebook" />
+								</a>
+								<a href="https://www.youtube.com/" target="_blank">
+									<img class="social_icon" src="assets/icons/youtube-icon.svg" alt="YouTube" />
+								</a>
+							</div>
+						</div>
+
+						<div class="footer__content">
+							<div class="footer__content_links">
+								<a href="#stack">Чему вы научитесь</a>
+								<a href="#process">Процесс обучения</a>
+								<a href="#coast">Стоимость</a>
+								<a href="#contacts">Контакты</a>
+								<a href="#registration">Регистрация</a>
+							</div>
+
+							<div id="contacts" class="footer__content_contacts">
+								<div class="footer__content_contacts-info">
+									<div>
+										<a class="phone" href="tel:+74993489396">+7 (499) 348 93 96</a>
+									</div>
+									<div>
+										<a class="email" href="mailto:info@ytyt.ru">info@ytyt.ru</a>
+									</div>
+								</div>
+
+								<div class="footer__content_contacts-tax_information">
+									<p>ИП Умаров Т. А. <br />ИНН 745216229809 <br />ОГРНИП 315745200001358</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer__separator"></div>
+
+					<div class="footer__copyrights">
+						<span>© 2022 ytyt — Все права защищены</span>
+						<div class="footer__copyright">
+							<a href="#" class="footer__terms-of-service">Пользовательское соглашение</a>
+							<a href="#" class="footer__privacy-policy">Политика конфиденциальности</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- MODALS -->
+		<!-- page 1 -->
+		<div class="popup__main popup_start" data-modal>
+			<div class="container">
+				<div class="inner">
+					<div class="popup__page popup_1">
+						<button class="popup-close">
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC" />
+								<rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC" />
+							</svg>
+						</button>
+						<h4>
+							Перед тем, как приступить к обучению, <br />
+							необходимо пройти небольшой тест
+						</h4>
+						<p>
+							Тест состоит из 4 заданий на логическое мышление и прочие навыки, необходимые программисту. Задания не самые простые. Но ни в коем случае не выбирайте ответы наугад. Если вы не можете
+							дать правильный ответ – выбирайте пункт «Не знаю».
+						</p>
+						<button class="button button_start">Начать тест <img src="assets/icons/header-button-arrow.svg" alt="arrow" /></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- page 2 -->
+		<div class="popup__main popup_about-task" data-modal>
+			<div class="container">
+				<div class="inner">
+					<div class="popup__page popup_2">
+						<button class="popup-close">
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC" />
+								<rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC" />
+							</svg>
+						</button>
+						<p>
+							Тест состоит из 4 заданий на логическое мышление и прочие навыки, необходимые программисту. Задания не самые простые. Но ни в коем случае не выбирайте ответы наугад. Если вы не можете
+							дать правильный ответ – выбирайте пункт «Не знаю».
+						</p>
+						<button class="button button_start">Начать тест <img src="assets/icons/header-button-arrow.svg" alt="arrow" /></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- page 3 -->
+		<div class="popup__main popup_task-1" data-modal>
+			<div class="container">
+				<div class="inner">
+					<div class="popup__page popup_3">
+						<button class="popup-close">
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC" />
+								<rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC" />
+							</svg>
+						</button>
+						<h6>Задание №1</h6>
+						<p>
+							Иван Иванович купил в магазине у дома несколько пачек макарон по 40 рублей, несколько пачек печенья по 32 рубля и 2 пакета сока. Продавщица сказала, что с него 525 рублей (скидка не
+							предусмотрена). Иван Иванович заявил, что его пытаются обсчитать. Действительно ли продавщица ошиблась в подсчетах?
+						</p>
+
+						<div class="main_form">
+							<form class="form" action="#" method="POST">
+								<div class="input_wrap">
+									<input type="checkbox" name="fieldset-1" id="checkbox1" />
+									<label for="checkbox1">Да, сумма явно неверная</label>
+								</div>
+								<div class="input_wrap">
+									<input type="checkbox" name="fieldset-2" id="checkbox2" />
+									<label for="checkbox2">Нет, такая сумма вполне могла получиться</label>
+								</div>
+								<div class="input_wrap">
+									<input type="checkbox" name="fieldset-3" id="checkbox3" />
+									<label for="checkbox3">Не знаю, не получается решить</label>
+								</div>
+							</form>
+
+							<button class="button button_answer">Ответить <img src="assets/icons/modal-button-arrow.svg" alt="arrow" /></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- page 4 -->
+		<div class="popup__main popup_answer-1" data-modal>
+			<div class="container">
+				<div class="inner">
+					<div class="popup__page popup_4">
+						<button class="popup-close">
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC" />
+								<rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC" />
+							</svg>
+						</button>
+						<h6>Задание №1</h6>
+						<h4>Правильно! С логикой у вас все отлично</h4>
+						<p class="popup_4-text">
+							Так как 1 пачка макарон стоит 40 рублей, то любое количество пачек будет стоить четное число рублей. Аналогично с печеньем. А так как пакетов сока ровно 2, то за сок тоже нужно будет
+							отдать четное число рублей. Получается, что ни при каких условиях в результате не может получиться нечетное число 525, а значит, продавщица действительно пыталась обсчитать Ивана
+							Ивановича. <br />
+							<br />
+							<span>В этом задании проверялось ваше логическое мышление. Это критически важный навык для любого программиста.</span>
+						</p>
+
+						<button class="button button_answer">Далее<img src="assets/icons/modal-button-arrow.svg" alt="arrow" /></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- page 5 -->
+		<div class="popup__main popup_result" data-modal>
+			<div class="container">
+				<div class="inner">
+					<div class="popup__page popup_5">
+						<button class="popup-close">
+							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC" />
+								<rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC" />
+							</svg>
+						</button>
+
+						<div class="popup_5-results"><img src="assets/icons/like-icon.svg" alt="like-icon" /> Набрано 4/4</div>
+
+						<p>Это великолепный результат! У вас есть все шансы стать отличным программистом. Начните обучение прямо сейчас, доступ ко вводным урокам уже открыт</p>
+
+						<button class="button" id="start-free">Начать учиться бесплатно<img src="assets/icons/modal-button-arrow.svg" alt="arrow" /></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- SCROLL TO TOP -->
+		<div>
+			<a href="#" id="scroll-to-top"><img src="assets/icons/up-arrow.png" alt="icon-up" /></a>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -227,6 +227,31 @@ const modals = () => {
 
 /***/ }),
 
+/***/ "./src/js/modules/scroll-to-down.js":
+/*!******************************************!*\
+  !*** ./src/js/modules/scroll-to-down.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   arrowScroll: () => (/* binding */ arrowScroll)
+/* harmony export */ });
+const arrowScroll = () => {
+  document.querySelector('.button_tap_next').addEventListener('click', event => {
+    event.preventDefault();
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
+    });
+  });
+};
+window.addEventListener('scroll', arrowScroll);
+window.addEventListener('resize', arrowScroll);
+
+
+/***/ }),
+
 /***/ "./src/js/modules/scroll-to-up.js":
 /*!****************************************!*\
   !*** ./src/js/modules/scroll-to-up.js ***!
@@ -239,7 +264,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 const handleScroll = () => {
   const scrollToTopButton = document.getElementById('scroll-to-top');
-  if (window.pageYOffset > 1650) {
+  if (window.pageYOffset > 1000) {
     scrollToTopButton.style.display = 'block';
   } else {
     scrollToTopButton.style.display = 'none';
@@ -271,7 +296,7 @@ __webpack_require__.r(__webpack_exports__);
 const scrolling = upSelector => {
   const upElem = document.querySelector(upSelector);
   window.addEventListener('scroll', () => {
-    if (document.documentElement.scrollTop > 1650) {
+    if (document.documentElement.scrollTop > 1000) {
       upElem.classList.add('animated', 'fadeIn');
       upElem.classList.remove('fadeOut');
     } else {
@@ -380,6 +405,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_burger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/burger */ "./src/js/modules/burger.js");
 /* harmony import */ var _modules_scrolling__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/scrolling */ "./src/js/modules/scrolling.js");
 /* harmony import */ var _modules_scroll_to_up__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/scroll-to-up */ "./src/js/modules/scroll-to-up.js");
+/* harmony import */ var _modules_scroll_to_down__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/scroll-to-down */ "./src/js/modules/scroll-to-down.js");
+
 
 
 
@@ -387,11 +414,11 @@ __webpack_require__.r(__webpack_exports__);
 window.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
-  let modalState = {};
   (0,_modules_modals__WEBPACK_IMPORTED_MODULE_0__["default"])();
   (0,_modules_burger__WEBPACK_IMPORTED_MODULE_1__["default"])('.header__menu_burger', '.burger', '.header__menu_burger .popup-close');
   (0,_modules_scrolling__WEBPACK_IMPORTED_MODULE_2__["default"])('#scroll-to-top');
   window.addEventListener('scroll', _modules_scroll_to_up__WEBPACK_IMPORTED_MODULE_3__.handleScroll);
+  window.addEventListener('scroll', _modules_scroll_to_down__WEBPACK_IMPORTED_MODULE_4__.arrowScroll);
 });
 })();
 

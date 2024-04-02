@@ -1,0 +1,78 @@
+.button
+  font-family: $font-family
+  font-size: 13px
+  line-height: 104%
+  color: #3c3e50
+  background-color: $color-white
+  border: none
+
+.button_enter
+  font-family: $font-family
+  @include width_height($width: 79px, $height: 30px)
+  border-radius: 34px
+  background: $color-light-blue
+  font-weight: 500
+  font-size: 12px
+  line-height: 104%
+  color: $color-white
+  @include flexContainer(row, center, center)
+  gap: 2px
+  border: none
+  transition: all 0.2s ease-out
+
+  &:hover
+    background-color: $color-orange
+
+.button_start, #start-free
+  font-family: $font-family
+  border-radius: 82px
+  @include width_height($width: 321px, $height: 70px)
+  background: $color-orange
+  @include flexContainer(row, center, center)
+  gap: 12px
+  color: $color-white
+  font-size: 1.25em
+  line-height: 97%
+  letter-spacing: -0.025em
+  text-align: center
+  color: #fff
+  transition: all 0.2s ease-out
+
+  &:hover
+    background-color: $color-light-blue
+
+.button_tap_next
+  border-radius: 100%
+  border: none
+  background-color: #fff
+  @include flexContainer(row, center, center)
+  @include width_height($width: 37px, $height: 37px)
+  // transition: all 0.1s
+
+  &:hover
+    border: 1px solid $text-color-main
+
+.button_answer
+  border-radius: 82px
+  @include width_height($width: 132px, $height: 49px)
+  @include flexContainer(row, center, center)
+  background: $color-orange
+  font-family: $font-family
+  font-weight: 500
+  font-size: 15px
+  line-height: 97%
+  letter-spacing: -0.03em
+  gap: 8px
+  color: $color-white
+  text-align: center
+  transition: all 0.2s ease-out
+
+  &:hover
+    background-color: $color-light-blue
+
+.burger
+  display: none
+  padding: 0
+  cursor: pointer
+  background-color: $color-white
+  border: none
