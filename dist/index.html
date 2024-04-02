@@ -4,14 +4,44 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>School</title>
+		<link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+		<title>Школа программирования</title>
 		<link rel="stylesheet" href="assets/css/animate.css" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<!-- HEADER -->
 
-		<header class="header">
+		<div class="header__menu_burger">
+			<div class="header__menu_burger-content">
+				<button class="popup-close">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC" />
+						<rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC" />
+					</svg>
+				</button>
+				<ul class="burger_menu">
+					<li>
+						<a href="#stack">Чему вы научитесь</a>
+					</li>
+					<li>
+						<a href="#process">Процесс обучения</a>
+					</li>
+					<li>
+						<a href="#coast">Стоимость</a>
+					</li>
+					<li>
+						<a href="#contacts">Контакты</a>
+					</li>
+					<li>
+						<a href="#registration">Регистрация</a>
+					</li>
+				</ul>
+				<button class="button_enter"><img src="assets/icons/arrow-button.svg" alt="arrow" />Войти</button>
+			</div>
+		</div>
+
+		<header id="up" class="header">
 			<div class="container">
 				<div class="inner">
 					<div class="header__menu">
@@ -21,23 +51,25 @@
 							</div>
 
 							<nav class="header__nav_links">
-								<a href="#" class="header__nav_link hover_orange">Чему вы научитесь</a>
-								<a href="#" class="header__nav_link hover_orange">Процесс обучения</a>
-								<a href="#" class="header__nav_link hover_orange">Стоимость</a>
-								<a href="#" class="header__nav_link hover_orange">Контакты</a>
+								<a href="#stack" class="header__nav_link hover_orange">Чему вы научитесь</a>
+								<a href="#process" class="header__nav_link hover_orange">Процесс обучения</a>
+								<a href="#coast" class="header__nav_link hover_orange">Стоимость</a>
+								<a href="#contacts" class="header__nav_link hover_orange">Контакты</a>
 							</nav>
 						</div>
 
 						<div class="header__menu_button-wrap">
-							<button class="button hover_orange">Регистрация</button>
+							<button id="registration" class="button hover_orange">Регистрация</button>
 							<button class="button_enter"><img src="assets/icons/arrow-button.svg" alt="arrow" />Войти</button>
 						</div>
+
+						<button class="burger"><img src="assets/icons/burger-icon.svg" alt="burger-icon" /></button>
 					</div>
 
 					<div class="header__content">
 						<div class="header__content_intro">
 							<h1>
-								Школа <span class="title_symbol">{ </span><span class="title_word">программирования</span><span class="title_symbol"> }</span> для тех, кому нужны реальные навыки, <br />
+								Школа <span class="title_symbol">{</span><span class="title_word">программирования</span><span class="title_symbol">}</span> для тех, кому нужны реальные навыки, <br />
 								а не просто сертификат
 							</h1>
 							<div class="header__separator"></div>
@@ -61,7 +93,7 @@
 
 		<!-- ABOUT -->
 
-		<div class="about">
+		<div id="stack" class="about">
 			<div class="container">
 				<div class="inner">
 					<h2>Какие технологии вы изучите:</h2>
@@ -166,15 +198,13 @@
 						</div>
 						<div class="about__card">
 							<img src="assets/icons/about-icon-7.svg" alt="icon" />
-							<h5>
-								Быстрый и легкий <br />
-								возврат
-							</h5>
-							<p>
-								Если передумаете учиться – <br />
-								вернем деньги за 3 <br />
-								рабочих дня
-							</p>
+							<div>
+								<h5>Быстрый и легкий возврат</h5>
+								<p>
+									Если передумаете учиться – <br />
+									вернем деньги за 3 рабочих дня
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -183,7 +213,7 @@
 
 		<!-- PROGRAMM -->
 
-		<div class="programm">
+		<div id="process" class="programm">
 			<div class="container">
 				<div class="inner">
 					<h2>Как происходит обучение на YtYt?</h2>
@@ -191,6 +221,11 @@
 					<p class="programm__inner_subheading">
 						Обучение должно быть комфортным. Поэтому мы разработали собственную платформу для обучения программированию. На ней вы можете не только изучать теорию, но и запускать готовые примеры и
 						даже писать свой собственный код.
+					</p>
+
+					<p class="programm__inner_subheading">
+						Обучение должно быть комфортным. Поэтому мы разработали собственную платформу, на которой вы сможете не только изучать теорию, но и запускать готовые примеры и даже писать свой собственный
+						код.
 					</p>
 
 					<div class="programm__interactive">
@@ -204,11 +239,9 @@
 						<div class="programm__content_step">
 							<p class="programm__content_heading">01</p>
 							<p class="programm__content_subheading">Весь материал разбит на небольшие уроки</p>
-							<p class="programm__content_text">
-								Теория и практика подаются маленькими порциями. Так <br />
-								вам будет легче усваивать <br />
-								новые знания.
-							</p>
+							<p class="programm__content_subheading-2">Весь материал разбит на небольшие уроки</p>
+							<p class="programm__content_text">Теория и практика подаются маленькими порциями. Так вам будет легче усваивать новые знания.</p>
+							<p class="programm__content_text-2">В каждом уроке вы будете не только узнавать что-то новое, но и выполнять интересные практические задания.</p>
 						</div>
 
 						<div class="programm__separator"></div>
@@ -219,10 +252,9 @@
 								Обучение <br />
 								через практику
 							</p>
-							<p class="programm__content_text">
-								Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты <br />
-								своего труда.
-							</p>
+							<p class="programm__content_subheading-2">500 самых разных программ</p>
+							<p class="programm__content_text">Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.</p>
+							<p class="programm__content_text-2">От простого калькулятора ипотеки до мощного веб-приложения, размещенного на сервере и доступного из любой точки мира</p>
 						</div>
 
 						<div class="programm__separator"></div>
@@ -233,19 +265,15 @@
 								Нет ограничений <br />
 								по времени
 							</p>
-							<p class="programm__content_text">
-								Можно совмещать учёбу с работой <br />
-								и другими делами. Не нужно выпрашивать академический отпуск, если пришлось сделать перерыв.
-							</p>
+							<p class="programm__content_subheading-2">Учитесь в комфортном темпе</p>
+							<p class="programm__content_text">Можно совмещать учёбу с работой и другими делами. Не нужно выпрашивать академический отпуск, если пришлось сделать перерыв.</p>
+							<p class="programm__content_text-2">От 30 минут до нескольких часов в день. Изучать теорию можно даже с мобильного телефона. Например, пока вы едете на работу.</p>
 						</div>
 					</div>
 
 					<div class="programm_button-wrap">
 						<button class="button button_start">Начать обучение <img src="assets/icons/header-button-arrow.svg" alt="arrow" /></button>
-						<p class="programm_button-wrap-text">
-							Попробуйте, первые уроки <br />бесплатны, но нужно пройти <br />
-							тестирование
-						</p>
+						<p class="programm_button-wrap-text">Попробуйте, первые уроки бесплатны, но нужно пройти тестирование</p>
 					</div>
 				</div>
 			</div>
@@ -262,24 +290,16 @@
 						</div>
 						<div class="support__item item2">
 							<h3>Помощь и поддержка</h3>
+							<p class="support__item-text">Если в процессе обучения возникнут сложности, вы всегда сможете задать вопрос своему наставнику.</p>
 							<p class="support__item-text">
-								Если в процессе обучения возникнут сложности, вы <br />
-								всегда сможете задать вопрос своему наставнику.
-							</p>
-							<p class="support__item-text">
-								Раз в несколько уроков вы будете получать большое задание, которое <br />
-								нужно будет сдавать на проверку код-ревьюеру. Он внимательно <br />
-								изучит ваш код, найдет ошибки и поможет вам стать лучше.
+								Раз в несколько уроков вы будете получать большое задание, которое нужно будет сдавать на проверку код-ревьюеру. Он внимательно изучит ваш код, найдет ошибки и поможет вам стать лучше.
 							</p>
 						</div>
 						<div class="support__item item3">
 							<h3>Методика обучения</h3>
 							<p class="support__item-text">
-								Весь учебный материал структурирован по принципу <br />
-								«спирального обучения». Сначала вы получаете базовые знания, <br />
-								а затем на каждом витке спирали углубляетесь в изученные темы, <br />
-								доводя их понимание до совершенства. Такой подход упрощает <br />
-								обучение и гарантирует, что вы не пропустите ничего важного.
+								Весь учебный материал структурирован по принципу «спирального обучения». Сначала вы получаете базовые знания, а затем на каждом витке спирали углубляетесь в изученные темы, доводя их
+								понимание до совершенства. Такой подход упрощает обучение и гарантирует, что вы не пропустите ничего важного.
 							</p>
 						</div>
 						<div class="support__item item4">
@@ -292,7 +312,7 @@
 
 		<!-- COAST -->
 
-		<div class="coast">
+		<div id="coast" class="coast">
 			<div class="container">
 				<div class="inner">
 					<h2>Стоимость обучения</h2>
@@ -324,6 +344,13 @@
 								Возвращаем деньги за 3 рабочих дня.
 							</p>
 						</div>
+					</div>
+
+					<div class="coast__phone">
+						<button>
+							<img src="assets/icons/coast-phone-icon.svg" alt="phone-icon" />
+							<img src="assets/icons/coast-arrow-icon.svg" alt="arrow-icon" />
+						</button>
 					</div>
 
 					<div class="coast__content">
@@ -410,23 +437,31 @@
 							</div>
 
 							<div class="footer__about_social">
-								<img class="social_icon" src="assets/icons/instagramm-icon.svg" alt="social-icon" />
-								<img class="social_icon" src="assets/icons/vk-icon.svg" alt="social-icon" />
-								<img class="social_icon" src="assets/icons/facebook-icon.svg" alt="social-icon" />
-								<img class="social_icon" src="assets/icons/youtube-icon.svg" alt="social-icon" />
+								<a href="https://www.instagram.com/" target="_blank">
+									<img class="social_icon" src="assets/icons/instagramm-icon.svg" alt="Instagram" />
+								</a>
+								<a href="https://vk.com/" target="_blank">
+									<img class="social_icon" src="assets/icons/vk-icon.svg" alt="VK" />
+								</a>
+								<a href="https://www.facebook.com/" target="_blank">
+									<img class="social_icon" src="assets/icons/facebook-icon.svg" alt="Facebook" />
+								</a>
+								<a href="https://www.youtube.com/" target="_blank">
+									<img class="social_icon" src="assets/icons/youtube-icon.svg" alt="YouTube" />
+								</a>
 							</div>
 						</div>
 
 						<div class="footer__content">
 							<div class="footer__content_links">
-								<a href="#">Чему вы научитесь</a>
-								<a href="#">Процесс обучения</a>
-								<a href="#">Стоимость</a>
-								<a href="#">Контакты</a>
-								<a href="#">Регистрация</a>
+								<a href="#stack">Чему вы научитесь</a>
+								<a href="#process">Процесс обучения</a>
+								<a href="#coast">Стоимость</a>
+								<a href="#contacts">Контакты</a>
+								<a href="#registration">Регистрация</a>
 							</div>
 
-							<div class="footer__content_contacts">
+							<div id="contacts" class="footer__content_contacts">
 								<div class="footer__content_contacts-info">
 									<div>
 										<a class="phone" href="tel:+74993489396">+7 (499) 348 93 96</a>
@@ -569,6 +604,11 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+		<!-- SCROLL TO TOP -->
+		<div>
+			<a href="#" id="scroll-to-top"><img src="assets/icons/up-arrow.png" alt="icon-up" /></a>
 		</div>
 
 		<script src="script.js"></script>

@@ -11,7 +11,8 @@
 
   .about__wrap
     border-radius: 48px
-    @include width_height(1160px, 353px)
+    max-width: 1160px
+    width: 100%
     background: $background-blocks
     margin-bottom: 84px
     @include flexContainer(row, center, flex-start)
@@ -25,12 +26,15 @@
       margin-bottom: 3px
 
     &-content
-      @include width_height(510px, 156px)
+      max-width: 510px
+      width: 100%
+      height: 156px
+      // @include width_height(510px, 156px)
       margin-top: 35px
       p
         font-family: $second-family
         font-weight: 600
-        font-size: 20px
+        font-size: 1.25rem
         line-height: 125%
         letter-spacing: 0.13px
 
@@ -41,7 +45,7 @@
       gap: 10px
 
     &-content-langs_item
-      font-size: 17px
+      font-size: 1.0625rem
       line-height: 271%
       text-align: center
       color: $color-white

@@ -15,11 +15,16 @@
     text-align: center
     max-width: 642px
     margin-bottom: 38px
+    &:nth-child(3)
+      display: none
 
   .programm__interactive
     position: relative
     background-image: url('assets/img/video-layer.png')
-    @include width_height(763px, 442px)
+    max-width: 763px
+    width: 100%
+    height: 442px
+    // @include width_height(763px, 442px)
     background-repeat: no-repeat
     background-size: cover
     background-position: center
@@ -44,19 +49,22 @@
 
     span
       font-weight: 500
-      font-size: 20px
+      font-size: 1.25em
       line-height: 97%
       letter-spacing: -0.03em
       color: $color-white
 
   .programm__content
     border-radius: 40px
-    width: 1160px
+    max-width: 1160px
+    width: 100%
     min-height: 349px
     box-shadow: 0 81px 120px -77px rgba(34, 37, 59, 0.04)
     background: $color-white
     margin-bottom: 26px
     display: flex
+    flex-direction: row
+    // flex-wrap: wrap
 
     &_step
       display: flex
@@ -70,7 +78,7 @@
 
     &_heading
       font-weight: 700
-      font-size: 77px
+      font-size: 4.8125rem
       line-height: 39%
       color: $color-light-blue
       margin-bottom: 25px
@@ -78,13 +86,27 @@
     &_subheading
       font-family: $second-family
       font-weight: 600
-      font-size: 24px
+      font-size: 1.5rem
       line-height: 125%
       margin-bottom: 19px
+
+    &__subheading-2
+      display: none
 
     &_text
       line-height: 144%
       color: #22253b
+      max-width: 234px
+
+    &_text-2
+      display: none
+
+    &_step:last-child
+      .programm__content_text
+        max-width: 282px
+    &_step:nth-child(3)
+      .programm__content_text
+        max-width: 266px
 
   .programm__separator
     background: $background-blocks
@@ -97,7 +119,6 @@
     @include width_height(538px, 93px)
     background: $color-white
     @include flexContainer(row, flex-start, center)
-    flex-wrap: wrap
 
     button
       @include width_height(249px, 70px)
@@ -105,7 +126,7 @@
       margin-left: 14px
       font-family: $font-family
       font-weight: 400
-      font-size: 16px
+      font-size: 1rem
       line-height: 97%
       letter-spacing: -0.03em
       text-align: center
@@ -114,5 +135,7 @@
   .programm_button-wrap-text
     font-family: $third-family
     font-weight: 600
-    font-size: 15px
+    font-size: 0.9375rem
     line-height: 120%
+    max-width: 214px
+    width: 100%

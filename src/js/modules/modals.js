@@ -70,7 +70,8 @@ const modals = () => {
 		return scrollWidth
 	}
 
-	// bindModal('.button-design', '.popup-design', '.popup-design .popup-close')
+	bindModal('.burger', '.header__menu_burger', '.header__menu_burger .popup-close')
+	bindModal('.button-design', '.popup-design', '.popup-design .popup-close')
 	// bindModal('.button-consultation', '.popup-consultation', '.popup-consultation .popup-close')
 }
 
