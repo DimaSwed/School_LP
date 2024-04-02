@@ -1,0 +1,91 @@
+footer
+  .inner
+    @include flexContainer(column, center, center)
+
+    .footer__wrapper
+      @include flexContainer(row, space-between, flex-start)
+      width: 100%
+      padding-bottom: 44px
+
+    .footer__about
+      @include flexContainer(column, flex-start, flex-start)
+
+      &_logos
+        display: flex
+        gap: 19px
+        margin-bottom: 40px
+
+        img
+          @include width_height(87px, 32px)
+
+        span
+          line-height: 111%
+          color: $color-dark-grey
+
+      &_social
+        display: flex
+        padding-left: 4px
+        gap: 16px
+        cursor: pointer
+        img:hover
+          color: red
+
+    .footer__content
+      @include flexContainer(row, space-between, center)
+
+      &_links
+        @include flexContainer(column, flex-start, flex-start)
+        gap: 25px
+        margin-right: 170px
+        a
+          font-size: 0.8125rem
+          color: $text-color-main
+          margin-right: 2px
+          &:hover
+            color: $color-orange
+            cursor: pointer
+
+      &_contacts
+        padding-right: 5px
+
+      &_contacts-info
+        margin-bottom: 63px
+
+    .phone
+      line-height: 144%
+      color: $color-light-blue
+      margin-bottom: 4px
+
+    .email
+      line-height: 144%
+      color: $text-color-main
+
+    .footer__content_contacts-tax_information
+      font-size: 0.8125rem
+      line-height: 177%
+      color: $color-dark-grey
+
+    .footer__separator
+      border: 1px solid #d8d8d8
+      max-width: 1160px
+      width: 100%
+      height: 0px
+
+    .footer__copyrights
+      @include flexContainer(row, space-between, center)
+      width: 100%
+      padding-top: 28px
+      padding-bottom: 32px
+      line-height: 144%
+      color: $color-dark-grey
+
+      a, span
+        display: inline-block
+        line-height: 144%
+        color: $color-dark-grey
+
+      a:hover
+        color: $color-orange
+
+    .footer__terms-of-service
+      margin-right: 64px

@@ -1,0 +1,85 @@
+.about
+  background-color: $color-white
+  margin-top: -20px
+  border-radius: 80px
+
+  .inner
+    padding: 96px 0 87px 0
+
+    h2
+      margin-bottom: 35px
+
+  .about__wrap
+    border-radius: 48px
+    max-width: 1160px
+    width: 100%
+    background: $background-blocks
+    margin-bottom: 84px
+    @include flexContainer(row, center, flex-start)
+    gap: 59px
+    padding-top: 42px
+    padding-left: 30px
+
+    &-img
+      @include width_height(407px, 352px)
+      align-self: flex-end
+      margin-bottom: 3px
+
+    &-content
+      max-width: 510px
+      width: 100%
+      height: 156px
+      // @include width_height(510px, 156px)
+      margin-top: 35px
+      p
+        font-family: $second-family
+        font-weight: 600
+        font-size: 1.25rem
+        line-height: 125%
+        letter-spacing: 0.13px
+
+    &-content-langs
+      margin-bottom: 25px
+      display: flex
+      flex-wrap: wrap
+      gap: 10px
+
+    &-content-langs_item
+      font-size: 1.0625rem
+      line-height: 271%
+      text-align: center
+      color: $color-white
+
+  .small-icon
+    @include width_height(89px, 45px)
+    border-radius: 44px
+  .middle-icon
+    @include width_height(151px, 45px)
+    border-radius: 44px
+  .large-icon
+    @include width_height(311px, 45px)
+    border-radius: 44px
+
+  .about__cards
+    @include flexContainer(row, center, center)
+    flex-wrap: wrap
+    gap: 26px
+
+  .about__card
+    border-radius: 30px
+    max-width: 270px
+    height: 254px
+    width: 100%
+    background: $background-blocks
+    @include flexContainer(column, center, center)
+    // padding: 50px 35px 31px 35px
+    padding-top: 4px
+
+    img
+      margin-bottom: 20px
+    h5
+      margin-bottom: 10px
+    p
+      text-align: center
+      font-size: 0.81rem
+      line-height: 115%

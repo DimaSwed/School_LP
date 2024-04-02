@@ -1,0 +1,145 @@
+.coast
+
+  .inner
+    padding-top: 90px
+    padding-bottom: 67px
+
+    h2
+      margin-bottom: 36px
+
+  .coast__advantages
+    margin: 0 auto
+    width: 100%
+    flex-wrap: wrap
+    display: flex
+    margin-bottom: 39px
+
+    &_item
+      @include flexContainer(row, flex-start, flex-start)
+
+      img
+        margin-right: 29px
+
+    &_item-text
+      line-height: 135%
+
+    .coast_item1
+      margin-right: 71px
+    .coast_item2
+      margin-right: 76px
+    .coast_item3
+      img
+        padding-top: 3px
+        margin-right: 36px
+
+  .coast__content
+    margin-bottom: 25px
+    border-radius: 30px
+    background: $color-white
+    padding-top: 36px
+    padding-bottom: 14px
+    padding-left: 39px
+    padding-right: 40px
+
+    table
+      width: 100%
+      max-width: 1160px
+      border-collapse: border-spacing
+
+    table thead th:first-child,
+    table tbody td:first-child 
+      width: 461px
+
+    table thead th:nth-child(2),
+    table tbody td:nth-child(2) 
+      width: 247px
+
+    table thead th 
+      font-weight: 700
+      line-height: 156%
+      color: $color-light-blue
+      text-align: left
+      border: none
+      padding-left: 20px
+      padding-bottom: 15px
+
+    table tbody td 
+      text-align: left
+      border: none
+      padding: 16px 19px
+      font-size: 1.25em
+
+    table tbody 
+      margin-left: 39px
+      margin-right: 40px
+
+    table tbody tr:nth-child(odd) 
+      background: $background-table
+
+    table tbody tr:nth-child(even) 
+      background: none
+
+    table tbody tr:nth-child(odd):not(:first-child),
+    table tbody tr:nth-child(odd):nth-child(2n) 
+      background: $background-table
+
+    // table tbody tr:nth-child(even):nth-child(odd) 
+
+    table tbody tr td:first-child 
+      border-radius: 10px 0 0 10px
+
+    table tbody tr td:last-child 
+      border-radius: 0 10px 10px 0
+
+    span
+      font-weight: 700
+      font-size: 1.5em
+      line-height: 155%
+
+  .coast__content-text
+    line-height: 156%
+    color: #8e8e8e
+    padding-left: 53px
+    margin-bottom: 30px
+
+  .coast__info
+    border-radius: 30px
+    height: 218px
+    background: $background-blocks
+    @include flexContainer(row, flex-start, center)
+    padding-left: 54px
+    padding-right: 51px
+
+    img
+      margin-right: 31px
+
+    p
+      margin-right: 23px
+      max-width: 600px
+      font-size: 1.0625em
+      line-height: 129%
+      padding-top: 5px
+
+    .button_start
+      font-family: $font-family
+      font-weight: 400
+      font-size: 1.25em
+      line-height: 110%
+      letter-spacing: -0.03em
+      padding-left: 35px
+      gap: 18px
+      text-align: center
+      margin-bottom: 8px
+      margin-right: 1px
+
+  .coast__phone
+    display: none
+    margin-bottom: 20px
+    padding-left: 19px
+    button
+      border: none
+      display: flex
+      gap: 7px
+      background-color: $background-main
+      img
+        display: block
